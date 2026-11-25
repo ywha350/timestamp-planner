@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+html { min-height: 100%; touch-action: pan-y; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { min-height: 100dvh; }
+input, textarea { -webkit-touch-callout: none; }
+body { margin: 0; background: white; color: black; font: 16px/1.75 ui-monospace, SFMono-Regular, Consolas, monospace; }
+main { padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); }
+.row { display: flex; align-items: baseline; gap: .5ch; }
+input, textarea { border: 0; border-radius: 0; outline: none; padding: 0; margin: 0; background: transparent; color: inherit; font: inherit; line-height: inherit; }
+.time { width: 11ch; flex: 0 0 11ch; }
+.start { width: 6ch; }
+.duration { white-space: nowrap; }
+.task { flex: 1; min-width: 2ch; resize: none; overflow: hidden; height: 1.75em; }
+#status { font: inherit; }
+.actions { display: flex; justify-content: space-between; align-items: center; margin-top: 1em; }
+.actions button { padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; min-height: 44px; }
